@@ -1,0 +1,155 @@
+:root {
+  --bg-intro-color: #2a2d43;
+  /* --bg-intro-color: #001524; */
+}
+
+.introduction {
+  min-height: 770px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: rgb(19, 19, 84); */
+  background-color: var(--bg-intro-color);
+}
+
+.introduction-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* INTRO TEXT */
+.intro-text {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+}
+.intro-text--left {
+  flex: 1;
+  font-family: "Montserrat";
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -1px;
+
+  text-align: right;
+  margin-right: 20px;
+
+  animation: load-in-1 1.2s;
+}
+
+.intro-text--right {
+  flex: 1;
+  font-family: "Open Sans";
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+
+  line-height: 25px;
+  margin-left: 20px;
+
+  animation: load-in-2 1.6s;
+}
+
+/* intro text animation */
+@keyframes load-in-1 {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes load-in-2 {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(120px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .intro-text {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .intro-text--left {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .intro-text--right {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media screen and (max-width: 767.98px) {
+  .intro-text {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .intro-text--left {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .intro-text--right {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media screen and (max-width: 991.98px) {
+  .intro-text {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .intro-text--left {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .intro-text--right {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media screen and (max-width: 1199.98px) {
+  .intro-text {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .intro-text--left {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .intro-text--right {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}

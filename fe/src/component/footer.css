@@ -1,0 +1,50 @@
+.footer-container {
+  min-height: 50px;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 90px;
+}
+
+.footer-text,
+.footer-icons {
+  color: rgb(186, 186, 186);
+  font-family: "Open Sans";
+}
+
+.footer-icons a {
+  color: rgb(186, 186, 186);
+}
+
+.footer-text {
+  font-size: 15px;
+}
+
+.footer-icons {
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-icon {
+  cursor: pointer;
+  padding: 0 0 0 15px;
+  text-decoration: none;
+}
+
+.footer-icon:hover {
+  color: rgb(238, 238, 238);
+}
+
+/* detail */
+.fa-github {
+  font-size: 30px;
+}
+
+/* .fa-arrow-up {
+  padding: 0 0 0 50px;
+} */

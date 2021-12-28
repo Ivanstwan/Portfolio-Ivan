@@ -1,0 +1,332 @@
+.my-work-detail {
+  width: 100%;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.mw-project-container {
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mw-dash-border {
+  width: 50%;
+  height: 1px;
+  border: none;
+  background-image: linear-gradient(90deg, #ccc, #333, #ccc);
+  margin: 10px;
+}
+.mw-dash-border-text {
+  width: 60%;
+  height: 1px;
+  border: none;
+  background-image: linear-gradient(90deg, #ccc, #333, #ccc);
+  margin: 20px 10px;
+}
+
+/* 1. project */
+.mw-project {
+  width: 75%;
+  padding: 70px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 1.1 text */
+.mw-project-text-container {
+  width: 60%;
+  position: relative;
+  z-index: 2;
+}
+
+.mw-project-title {
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.mw-project-text {
+  font-family: "Montserrat";
+  font-size: 16px;
+  margin-top: 8px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.mw-project-icon-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.mw-project-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.mw-project-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mw-project-link {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  line-height: 30px;
+}
+.mw-project-link:hover {
+  letter-spacing: 0.7px;
+}
+.mw-project-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: all 0.2s;
+  margin-top: -2px;
+}
+.mw-project-link:hover::after {
+  width: 260px;
+}
+
+.mw-project-link-2 {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  line-height: 40px;
+}
+.mw-project-link-2:hover {
+  letter-spacing: 0.7px;
+}
+.mw-project-link-2::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: all 0.2s;
+  margin-top: -6px;
+}
+.mw-project-link-2:hover::after {
+  width: 195px;
+}
+/* 1.2 image */
+.mw-project-image-container {
+  width: 40%;
+  height: 300px;
+}
+
+.mw-project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 0.2s ease-in-out;
+}
+
+.mw-project-image:hover {
+  transform: scale(1.5);
+}
+
+/* 2. project preview */
+.mw-project-preview {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mw-proj-preview-title-container {
+  width: 100%;
+}
+
+.mw-proj-preview-title {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mw-proj-prev-icon {
+  font-size: 20px;
+  margin-left: 20px;
+  transition: 0.2s all ease-in-out;
+}
+.mw-proj-prev-icon.active {
+  transform: rotate(180deg) translateX(0px);
+}
+
+.mw-proj-preview-title:hover .mw-proj-prev-icon {
+  transform: translateX(10px);
+}
+.mw-proj-preview-title:hover .mw-proj-prev-icon.active {
+  transform: rotate(180deg) translateX(10px);
+}
+
+/* 2.1 userflow */
+.mw-proj-userflow-container {
+  width: 60%;
+  /* background-color: red; */
+  /* height: 500px; */
+  transition: 0.3s all ease-in-out;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mw-proj-userflow-container.hidden {
+  opacity: 0;
+  height: 0;
+  transform: translateY(-50px);
+}
+.mw-proj-user {
+  /* position: relative; */
+  /* transform: translateY(0px); */
+  opacity: 1;
+  margin-top: 30px;
+}
+.mw-proj-user.hidden {
+  opacity: 0;
+  transform: translateY(-2000px);
+}
+
+/* ANIMATION */
+.slide-left {
+  opacity: 0;
+  transition: all ease-in-out 500ms;
+  transform: translateX(-50px);
+}
+
+.slide-left.appear {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.slide-right {
+  opacity: 0;
+  transition: all ease-in-out 500ms;
+  transform: translateX(50px);
+}
+
+.slide-right.appear {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+/* BANNER - EXPERIMENTIAL */
+.mw-project-banner-text {
+  position: relative;
+  overflow: hidden;
+  width: 305px;
+}
+.mw-project-banner-text .mw-project-banner-text-1 {
+  /* position: absolute; */
+  overflow: hidden;
+  animation: banner 8s linear infinite;
+  line-height: 20px;
+  font-family: "Roboto Mono";
+  font-size: 15px;
+}
+.mw-project-banner-text .mw-project-banner-text-2 {
+  position: relative;
+  overflow: hidden;
+  animation: banner-2 8s linear infinite;
+  animation-delay: -4s;
+  transform: translateY(-18px);
+  font-family: "Roboto Mono";
+  font-size: 15px;
+}
+
+@keyframes banner {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes banner-2 {
+  0% {
+    transform: translateX(100%) translateY(-18px);
+  }
+  50% {
+    transform: translateX(0) translateY(-18px);
+  }
+  100% {
+    transform: translateX(-100%) translateY(-18px);
+  }
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 575.98px) {
+  .mw-project {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .mw-project-text-container {
+    width: 80%;
+  }
+
+  .mw-project-image-container {
+    width: 100%;
+  }
+
+  .mw-project-image:hover {
+    transform: scale(1.5);
+  }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media screen and (max-width: 767.98px) {
+  .mw-project {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .mw-project-text-container {
+    width: 80%;
+  }
+
+  .mw-project-image-container {
+    width: 90%;
+  }
+
+  .mw-project-image:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media screen and (max-width: 991.98px) {
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media screen and (max-width: 1199.98px) {
+}

@@ -1,0 +1,227 @@
+.work-experience {
+  display: flex;
+  margin-top: 50px;
+}
+
+.work-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.work-table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  /* font-family: "Open Sans"; */
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -1px;
+}
+
+/* WORK GRAPH */
+.work-graph {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* ICON WORK */
+.work-fe,
+.work-be,
+.work-febe {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+
+.fe-icon {
+  width: 100px;
+  height: 90px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 400;
+
+  position: relative;
+  z-index: 1;
+}
+
+.fe-icon-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+
+.fe-icon:hover {
+  transform: scale(1.5);
+  transition: 0.1s ease-in-out;
+}
+
+.fe-icon-img-container {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.fe-icon-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.fe-icon-img-text {
+  display: flex;
+  text-align: center;
+}
+
+/* LABEL GRAPH */
+.work-label {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.work-label-fe,
+.work-label-be,
+.work-label-febe {
+  width: 33%;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  transition: all ease-in-out 300ms;
+}
+
+.work-label-febe:hover,
+.work-label-fe:hover,
+.work-label-be:hover {
+  letter-spacing: 2px;
+}
+
+/* CURSOR / HOVER ICON */
+.cursor {
+  position: fixed;
+  /* width: 5px;
+  height: 5px;
+  border-radius: 50%; */
+  /* background: red; */
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.cursor span {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  width: auto;
+  padding: 0px 5px;
+
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  z-index: 5;
+}
+
+.cursor-text {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: auto;
+  padding: 0px 7px;
+
+  transform: translate(-50%, -50%);
+
+  background-color: black;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  font-size: 15px;
+  z-index: 5;
+}
+
+/* ANIMATION */
+@keyframes work-title-an {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ANIMATION - INTERSECTION OBSERVER */
+/* 1. work-title */
+.fade-in {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: all 450ms ease-in-out;
+}
+
+.fade-in.appear {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* 2. WORK FEBE */
+.fade-opac {
+  opacity: 0;
+  transition: opacity 650ms ease-in;
+}
+
+.fade-opac.appear {
+  opacity: 1;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 575.98px) {
+  .work-title {
+    font-size: 30px;
+  }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media screen and (max-width: 767.98px) {
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media screen and (max-width: 991.98px) {
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media screen and (max-width: 1199.98px) {
+}
