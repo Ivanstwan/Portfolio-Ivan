@@ -300,6 +300,28 @@
   .mw-project-image:hover {
     transform: scale(1.5);
   }
+
+  /* BANNER */
+  .mw-project-banner-text {
+    width: 190px;
+  }
+  .mw-project-banner-text .mw-project-banner-text-1 {
+    /* position: absolute; */
+    overflow: hidden;
+    animation: banner 8s linear infinite;
+    line-height: 20px;
+    font-family: "Roboto Mono";
+    font-size: 10px;
+  }
+  .mw-project-banner-text .mw-project-banner-text-2 {
+    position: relative;
+    overflow: hidden;
+    animation: banner-2 8s linear infinite;
+    animation-delay: -4s;
+    transform: translateY(-18px);
+    font-family: "Roboto Mono";
+    font-size: 10px;
+  }
 }
 
 /* // Small devices (landscape phones, less than 768px) */
@@ -329,4 +351,13 @@
 
 /* // Large devices (desktops, less than 1200px) */
 @media screen and (max-width: 1199.98px) {
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
