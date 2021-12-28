@@ -273,6 +273,14 @@
   .navbar--open-text {
     text-align: right;
   }
+
+  .navbar-logo {
+    margin-left: 0;
+  }
+
+  .navbar-burger {
+    margin-right: 0;
+  }
 }
 
 /* // Small devices (landscape phones, less than 768px) */

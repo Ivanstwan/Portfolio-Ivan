@@ -1,6 +1,6 @@
 .contact-me {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   /* position: relative; */
   display: flex;
   flex-direction: column;
@@ -110,7 +110,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 70px;
+  /* margin-top: 10px; */
 }
 
 .cm-other-text {
@@ -160,7 +160,7 @@
 /* MEDIA QUERY */
 @media screen and (max-width: 575.98px) {
   .contact-me {
-    height: 100vh;
+    height: 90vh;
   }
   .cm-container {
     width: 85%;
@@ -169,12 +169,111 @@
   .cm-input-email-container,
   .cm-input-message-container {
     width: 100%;
+    margin: 10px 0;
   }
 
   .cm-input-name,
   .cm-input-email,
   .cm-input-message {
     width: 80%;
+    font-size: 14px;
+  }
+
+  .cm-input-container {
+    margin-top: 0;
+  }
+
+  .cm-text {
+    font-family: "Montserrat";
+    color: #b1b1b1;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: -0.3px;
+  }
+  .cm-text-b {
+    font-weight: 700;
+  }
+
+  .cm-button-container {
+    position: relative;
+    z-index: 2;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #515151;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+  }
+
+  .cm-button {
+    font-family: "Montserrat";
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #b1b1b1;
+  }
+
+  .cm-button-response {
+    position: relative;
+    height: 20px;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  /* button */
+  .cm-other-text {
+    font-size: 12px;
+  }
+  .cm-a {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #005c8eba;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s all ease-in-out;
+  }
+
+  .cm-a-text {
+    font-size: 13px;
+  }
+
+  .cm-a .fab {
+    font-size: 17px;
+  }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media screen and (min-width: 500px) and (max-width: 767.98px) {
+  .contact-me {
+    height: 90vh;
+  }
+  .cm-container {
+    width: 85%;
+  }
+  .cm-input-name-container,
+  .cm-input-email-container,
+  .cm-input-message-container {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  .cm-input-name,
+  .cm-input-email,
+  .cm-input-message {
+    width: 90%;
+    font-size: 14px;
   }
 
   .cm-text {
@@ -188,38 +287,29 @@
   .cm-text-b {
     font-weight: 700;
   }
-}
 
-/* // Small devices (landscape phones, less than 768px) */
-@media screen and (max-width: 767.98px) {
-  .contact-me {
-    height: 90vh;
-  }
-  .cm-container {
-    width: 85%;
-  }
-  .cm-input-name-container,
-  .cm-input-email-container,
-  .cm-input-message-container {
-    width: 100%;
-  }
-
-  .cm-input-name,
-  .cm-input-email,
-  .cm-input-message {
-    width: 90%;
+  .cm-button-container {
+    position: relative;
+    z-index: 2;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #515151;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
   }
 
-  .cm-text {
+  .cm-button {
     font-family: "Montserrat";
-    color: #b1b1b1;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 35px;
-    letter-spacing: -0.3px;
-  }
-  .cm-text-b {
+    font-size: 13px;
     font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #b1b1b1;
   }
 }
 

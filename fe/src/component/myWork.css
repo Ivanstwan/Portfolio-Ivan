@@ -90,6 +90,9 @@
   width: 60px;
   height: 60px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fe-icon-img {
@@ -210,7 +213,17 @@
 /* MEDIA QUERY */
 @media screen and (max-width: 575.98px) {
   .work-title {
-    font-size: 30px;
+    font-size: 6vw;
+  }
+
+  .work-label-fe,
+  .work-label-be,
+  .work-label-febe {
+    font-size: 4vw;
+  }
+
+  .fe-icon-img-text {
+    font-size: 3.5vw;
   }
 }
 

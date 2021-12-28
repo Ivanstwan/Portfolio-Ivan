@@ -281,6 +281,13 @@
   }
 }
 
+/* IFRAME */
+.mw-project-preview iframe {
+  width: 70vw;
+  height: 39.38vw;
+  object-fit: contain;
+}
+
 /* MEDIA QUERY */
 @media screen and (max-width: 575.98px) {
   .mw-project {
@@ -303,7 +310,7 @@
 
   /* BANNER */
   .mw-project-banner-text {
-    width: 190px;
+    width: 57vw;
   }
   .mw-project-banner-text .mw-project-banner-text-1 {
     /* position: absolute; */
@@ -311,21 +318,53 @@
     animation: banner 8s linear infinite;
     line-height: 20px;
     font-family: "Roboto Mono";
-    font-size: 10px;
+    font-size: 3vw;
   }
   .mw-project-banner-text .mw-project-banner-text-2 {
     position: relative;
     overflow: hidden;
     animation: banner-2 8s linear infinite;
     animation-delay: -4s;
-    transform: translateY(-18px);
+    transform: translateY(-16px);
     font-family: "Roboto Mono";
-    font-size: 10px;
+    font-size: 3vw;
+  }
+
+  .mw-project-link-2 {
+    font-size: 15px;
+  }
+
+  .mw-project {
+    padding-bottom: 10px;
+  }
+
+  .mw-proj-prev-text {
+    font-size: 5vw;
+  }
+  .mw-proj-prev-icon {
+    font-size: 5vw;
+    margin-left: 0;
+  }
+
+  .mw-proj-preview-title {
+    margin-bottom: 20px;
+  }
+
+  @keyframes banner-2 {
+    0% {
+      transform: translateX(100%) translateY(-16px);
+    }
+    50% {
+      transform: translateX(0) translateY(-16px);
+    }
+    100% {
+      transform: translateX(-100%) translateY(-16px);
+    }
   }
 }
 
 /* // Small devices (landscape phones, less than 768px) */
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 500px) and (max-width: 767.98px) {
   .mw-project {
     display: flex;
     flex-direction: column;
@@ -342,6 +381,39 @@
 
   .mw-project-image:hover {
     transform: scale(1.1);
+  }
+
+  /* BANNER */
+  .mw-project-banner-text {
+    width: 57vw;
+  }
+  .mw-project-banner-text .mw-project-banner-text-1 {
+    overflow: hidden;
+    animation: banner 8s linear infinite;
+    line-height: 20px;
+    font-family: "Roboto Mono";
+    font-size: 3vw;
+  }
+  .mw-project-banner-text .mw-project-banner-text-2 {
+    position: relative;
+    overflow: hidden;
+    animation: banner-2 8s linear infinite;
+    animation-delay: -4s;
+    transform: translateY(-18px);
+    font-family: "Roboto Mono";
+    font-size: 3vw;
+  }
+
+  @keyframes banner-2 {
+    0% {
+      transform: translateX(100%) translateY(-18px);
+    }
+    50% {
+      transform: translateX(0) translateY(-18px);
+    }
+    100% {
+      transform: translateX(-100%) translateY(-18px);
+    }
   }
 }
 

@@ -48,3 +48,9 @@
 /* .fa-arrow-up {
   padding: 0 0 0 50px;
 } */
+
+@media screen and (max-width: 575.98px) {
+  .footer-container {
+    padding: 0 30px;
+  }
+}
