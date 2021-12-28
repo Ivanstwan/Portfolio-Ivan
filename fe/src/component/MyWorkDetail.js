@@ -17,8 +17,8 @@ function MyWorkDetail() {
     const slideRight = document.querySelectorAll(".slide-right");
 
     const appearOption = {
-      threshold: 1,
-      rootMargin: "0px 0px 80px 0px",
+      // threshold: 1,
+      rootMargin: "0px 0px 300px 0px",
     };
 
     const appearOnScroll = new IntersectionObserver(function (
